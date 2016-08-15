@@ -1,0 +1,55 @@
+<DOCTYPE! html>
+<head>
+
+
+<title>Testing
+</title>
+<script>
+
+var userInput = prompt("Choose between 'rock, paper, and scissor'.");
+var compInput = Math.random();
+
+if (Math.random <= 0.33) {
+    document.write("rock");
+}
+else if (Math.random <= 0.66) {
+    document.write("paper");
+}
+else{
+    document.write("scissor");
+};
+
+var compare = function(choose1,choose2){
+    if (choose1 === "rock") {
+        if (choose2 === "paper") {
+            return "paper wins";
+        }
+        else {
+            return("rock wins");
+        }
+    };
+    if (choose1 === "paper") {
+        if (choose2 === "rock") {
+            return("paper wins");
+        }
+        else{
+            return("scissor wins");
+        }
+    };
+    if (choose1 === "scissor") {
+        if (choose2 === "paper") {
+            return("scissor wins");
+        }
+        else{
+            return("rock wins");
+        }
+    };
+};
+
+compare(choose1,choose2);
+compare(userInput);
+compare(compInput);
+
+</script>
+
+</head>
